@@ -1,6 +1,6 @@
 ﻿using Ganss.Excel;
 using System.IO;
-namespace ConsoleApp5 { 
+namespace CustommerService { 
 class Program {
         public static void Main(string[] args) {
             Console.WriteLine("Please, give the path to the file.");
@@ -18,7 +18,7 @@ class Program {
                     var line = reader.ReadLine();
                     while (line != null)
                     {
-                        Console.WriteLine(line);
+                       
                         string[] data = line.Split("|");
                       
                         Custommer custommer = new Custommer(int.Parse(data[0]), data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], DateTime.Parse(data[9]));
