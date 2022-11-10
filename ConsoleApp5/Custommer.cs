@@ -8,7 +8,7 @@ namespace CustommerService
 {
     public class Custommer
     {
-        public Custommer(int iD, string firstName, string lastName, string email, string gender, string country, string city, string phone, string price, DateTime birthday)
+        public Custommer(int iD, string firstName, string lastName, string email, string gender, string country, string city, string phone, double price, DateTime birthday)
         {
             ID = iD;
             FirstName = firstName;
@@ -30,7 +30,7 @@ namespace CustommerService
         public  string Country { get; set; }
         public  string City { get; set; }
         public  string Phone { get; set; }
-        public  string Price { get; set; }
+        public  double Price { get; set; }
         public  DateTime Birthday { get; set; }
     }
 }
