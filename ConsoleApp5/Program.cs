@@ -43,8 +43,10 @@ namespace CustommerService {
 
 
             ExcelMapper mapper = new ExcelMapper();
+            mapper.HeaderRowNumber = 0;
             var newFile = @"C:\Users\irrae\excel.xlsx";
-            mapper.HeaderRow = true;
+           
+            
             
             mapper.Save(newFile, custommers, "SheetName", true);
         }

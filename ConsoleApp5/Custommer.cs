@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ganss.Excel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace CustommerService
             Birthday = birthday;
         }
 
+        [DataFormat("0")]
         public  int ID { get; set; }
         public  string FirstName { get; set; }
         public  string LastName { get; set; }
@@ -30,6 +32,8 @@ namespace CustommerService
         public  string Country { get; set; }
         public  string City { get; set; }
         public  string Phone { get; set; }
+
+        [DataFormat("0.00")]
         public  double Price { get; set; }
         public  DateTime Birthday { get; set; }
     }
